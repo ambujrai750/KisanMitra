@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add farmer | Kisan Mitra</title>
+    <meta name="description" content="Structured form for adding a farmer record with personal, contact and farm details.">
+    <link rel="icon" type="image/svg+xml" href="../images/logo/logo-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="app">
+        <aside class="sidebar">
+            <a class="brand brand--inverse" href="home.html">
+                <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                <span>
+                    <span class="brand__name">Kisan Mitra</span>
+                    <span class="brand__tagline">Management console</span>
+                </span>
+            </a>
+            <div>
+            <nav class="sidebar__nav" aria-label="Overview">
+                <h2 class="sidebar__group-title">Overview</h2>
+                <ul>
+                    <li><a class="sidebar__link" href="dashboard.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="8" height="9" rx="2"/><rect x="13" y="3" width="8" height="5" rx="2"/><rect x="13" y="10" width="8" height="11" rx="2"/><rect x="3" y="14" width="8" height="7" rx="2"/></svg><span>Dashboard</span></a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__nav" aria-label="Manage">
+                <h2 class="sidebar__group-title">Manage</h2>
+                <ul>
+                    <li><a class="sidebar__link is-current" href="farmers.html" aria-current="page"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="3.5"/><path d="M17 11a3 3 0 1 0 0-6"/><path d="M21 20v-2a3.5 3.5 0 0 0-2.5-3.3"/></svg><span>Farmers</span></a></li>
+                    <li><a class="sidebar__link" href="crops.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21V9"/><path d="M12 14c-4 0-6-2.6-6-6.5C10 7.5 12 10 12 14Z"/><path d="M12 12c4 0 6-2.6 6-6.5C14 5.5 12 8 12 12Z"/></svg><span>Crops</span></a></li>
+                    <li><a class="sidebar__link" href="equipment.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="17" r="3.5"/><circle cx="17.5" cy="18" r="2.5"/><path d="M6 13V8h5l2 5"/><path d="M13 13h5l1 3"/></svg><span>Equipment</span></a></li>
+                    <li><a class="sidebar__link" href="products.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h16l-1 11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Products</span></a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__nav" aria-label="Insights">
+                <h2 class="sidebar__group-title">Insights</h2>
+                <ul>
+                    <li><a class="sidebar__link" href="reports.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V5"/><path d="M4 20h16"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Reports</span></a></li>
+                    <li><a class="sidebar__link" href="information.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg><span>Information</span></a></li>
+                    <li><a class="sidebar__link" href="contact.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4Z"/></svg><span>Help &amp; contact</span></a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="sidebar__footer">
+                <strong>Phase 1 preview</strong>
+                Interface only. Data shown is sample data and nothing is saved yet.
+            </div>
+        </aside>
+        <div class="app__main">
+            <header class="app-header">
+                <a class="brand app-header__brand" href="home.html">
+                    <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                    <span>
+                        <span class="brand__name">Kisan Mitra</span>
+                        <span class="brand__tagline">Management console</span>
+                    </span>
+                </a>
+                <form class="search" role="search">
+                    <label class="visually-hidden" for="global-search">Search the platform</label>
+                    <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                    <input class="search__input" id="global-search" type="search" name="q"
+                        placeholder="Search farmers, crops or equipment">
+                </form>
+                <div class="app-header__tools">
+                    <button class="icon-button" type="button" aria-label="Notifications (3 unread)">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 16V11a6 6 0 1 0-12 0v5l-1.5 2.5h15Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+                        <span class="icon-button__dot"></span>
+                    </button>
+                    <div class="user-chip">
+                        <img class="user-chip__avatar" src="../images/farmers/farmer-1.svg" alt="">
+                        <span class="user-chip__text">
+                            <span class="user-chip__name">Ankit Verma</span>
+                            <span class="user-chip__role">Block manager</span>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <nav class="mobile-rail" aria-label="Section navigation">
+                <ul class="mobile-rail__list">
+                    <li><a class="mobile-rail__link" href="home.html">Website</a></li>
+                        <li><a class="mobile-rail__link" href="dashboard.html">Dashboard</a></li>
+                        <li><a class="mobile-rail__link is-current" href="farmers.html">Farmers</a></li>
+                        <li><a class="mobile-rail__link" href="crops.html">Crops</a></li>
+                        <li><a class="mobile-rail__link" href="equipment.html">Equipment</a></li>
+                        <li><a class="mobile-rail__link" href="products.html">Products</a></li>
+                        <li><a class="mobile-rail__link" href="reports.html">Reports</a></li>
+                        <li><a class="mobile-rail__link" href="information.html">Information</a></li>
+                        <li><a class="mobile-rail__link" href="contact.html">Help &amp; contact</a></li>
+                </ul>
+            </nav>
+            <main class="app-content" id="main">
+                    <nav aria-label="Breadcrumb">
+                        <ol class="breadcrumb">
+                                        <li><a href="dashboard.html">Dashboard</a></li>
+                                        <li><a href="farmers.html">Farmers</a></li>
+                                        <li aria-current="page">Add farmer</li>
+                        </ol>
+                    </nav>
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-header__title">Add farmer</h1>
+                        <p class="page-header__subtitle">Record a new farmer in the register. Fields marked with * are the ones the block office asks for first.</p>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="alert alert-info mb-5">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+                        <div>
+                            <strong>Phase 1 interface.</strong> This form does not save anything yet — validation and
+                            storage arrive in Phase 2.
+                        </div>
+                    </div>
+
+                    <section class="form-section">
+                        <h2 class="form-section__title">Personal information</h2>
+                        <p class="form-section__hint">As written on the farmer's identity document.</p>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-name">Farmer name <span class="required">*</span></label>
+                                <input class="form-control" id="farmer-name" name="farmer_name" type="text"
+                                    placeholder="Rahul Sharma">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="father-name">Father's name</label>
+                                <input class="form-control" id="father-name" name="father_name" type="text"
+                                    placeholder="Mahesh Sharma">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section">
+                        <h2 class="form-section__title">Contact information</h2>
+                        <p class="form-section__hint">Used for field visit reminders and season advisories.</p>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-mobile">Mobile number <span class="required">*</span></label>
+                                <input class="form-control" id="farmer-mobile" name="mobile" type="tel"
+                                    placeholder="+91 98765 43210">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-email">Email</label>
+                                <input class="form-control" id="farmer-email" name="email" type="email"
+                                    placeholder="rahul.sharma@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-village">Village <span class="required">*</span></label>
+                                <input class="form-control" id="farmer-village" name="village" type="text"
+                                    placeholder="Barsana">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-district">District</label>
+                                <select class="form-control" id="farmer-district" name="district">
+                                    <option>Mathura</option>
+                                    <option>Agra</option>
+                                    <option>Aligarh</option>
+                                    <option>Hathras</option>
+                                    <option>Meerut</option>
+                                    <option>Baghpat</option>
+                                    <option>Bulandshahr</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-state">State</label>
+                                <select class="form-control" id="farmer-state" name="state">
+                                    <option>Uttar Pradesh</option>
+                                    <option>Haryana</option>
+                                    <option>Rajasthan</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Delhi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-pincode">PIN code</label>
+                                <input class="form-control" id="farmer-pincode" name="pincode" type="text"
+                                    placeholder="281405">
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label class="form-label" for="farmer-address">Full address</label>
+                                <textarea class="form-control" id="farmer-address" name="address"
+                                    placeholder="House number, locality, landmark"></textarea>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section">
+                        <h2 class="form-section__title">Farm information</h2>
+                        <p class="form-section__hint">What is grown, on how much land, and how it is watered.</p>
+                        <div class="form-grid form-grid--3">
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-crop">Main crop <span class="required">*</span></label>
+                                <select class="form-control" id="farmer-crop" name="main_crop">
+                                    <option>Wheat</option>
+                                    <option>Rice</option>
+                                    <option>Maize</option>
+                                    <option>Potato</option>
+                                    <option>Mustard</option>
+                                    <option>Sugarcane</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="farm-size">Farm size (acres)</label>
+                                <input class="form-control" id="farm-size" name="farm_size" type="number" min="0" step="0.5"
+                                    placeholder="5">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="land-type">Land type</label>
+                                <select class="form-control" id="land-type" name="land_type">
+                                    <option>Irrigated</option>
+                                    <option>Rainfed</option>
+                                    <option>Partly irrigated</option>
+                                    <option>Orchard</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="soil-type">Soil type</label>
+                                <select class="form-control" id="soil-type" name="soil_type">
+                                    <option>Alluvial</option>
+                                    <option>Loam</option>
+                                    <option>Sandy loam</option>
+                                    <option>Clay</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="water-source">Water source</label>
+                                <select class="form-control" id="water-source" name="water_source">
+                                    <option>Tube well</option>
+                                    <option>Canal</option>
+                                    <option>Open well</option>
+                                    <option>Rain only</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="khasra">Khasra number</label>
+                                <input class="form-control" id="khasra" name="khasra" type="text" placeholder="112/3">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section">
+                        <h2 class="form-section__title">Additional information</h2>
+                        <p class="form-section__hint">A photograph helps field staff recognise the farmer during visits.</p>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-photo">Farmer photo</label>
+                                <input class="form-control" id="farmer-photo" name="photo" type="file" accept="image/*">
+                                <small class="form-hint">JPG or PNG, up to 2 MB.</small>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="farmer-status">Record status</label>
+                                <select class="form-control" id="farmer-status" name="status">
+                                    <option>Active</option>
+                                    <option>Inactive</option>
+                                    <option>Verification due</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label class="form-label" for="farmer-notes">Notes</label>
+                                <textarea class="form-control" id="farmer-notes" name="notes"
+                                    placeholder="Anything the next field officer should know"></textarea>
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label class="form-check" for="farmer-consent">
+                                    <input type="checkbox" id="farmer-consent" name="consent">
+                                    <span>The farmer agrees to their details being kept in the block register.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="form-actions form-actions--end">
+                        <a class="btn btn-secondary" href="farmers.html">Cancel</a>
+                        <button class="btn btn-primary" type="button">Save farmer</button>
+                    </div>
+                </form>
+            </main>
+            <footer class="footer footer--slim">
+                <div class="container">
+                    <div class="footer__bottom">
+                        <p>© 2025 Kisan Mitra. Phase 1 — static interface, college project.</p>
+                        <p>Sample data shown for demonstration only.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
