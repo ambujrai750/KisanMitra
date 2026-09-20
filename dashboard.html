@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Kisan Mitra</title>
+    <meta name="description" content="Central management dashboard with farmer, crop, equipment and production figures.">
+    <link rel="icon" type="image/svg+xml" href="../images/logo/logo-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="app">
+        <aside class="sidebar">
+            <a class="brand brand--inverse" href="home.html">
+                <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                <span>
+                    <span class="brand__name">Kisan Mitra</span>
+                    <span class="brand__tagline">Management console</span>
+                </span>
+            </a>
+            <div>
+            <nav class="sidebar__nav" aria-label="Overview">
+                <h2 class="sidebar__group-title">Overview</h2>
+                <ul>
+                    <li><a class="sidebar__link is-current" href="dashboard.html" aria-current="page"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="8" height="9" rx="2"/><rect x="13" y="3" width="8" height="5" rx="2"/><rect x="13" y="10" width="8" height="11" rx="2"/><rect x="3" y="14" width="8" height="7" rx="2"/></svg><span>Dashboard</span></a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__nav" aria-label="Manage">
+                <h2 class="sidebar__group-title">Manage</h2>
+                <ul>
+                    <li><a class="sidebar__link" href="farmers.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="3.5"/><path d="M17 11a3 3 0 1 0 0-6"/><path d="M21 20v-2a3.5 3.5 0 0 0-2.5-3.3"/></svg><span>Farmers</span></a></li>
+                    <li><a class="sidebar__link" href="crops.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21V9"/><path d="M12 14c-4 0-6-2.6-6-6.5C10 7.5 12 10 12 14Z"/><path d="M12 12c4 0 6-2.6 6-6.5C14 5.5 12 8 12 12Z"/></svg><span>Crops</span></a></li>
+                    <li><a class="sidebar__link" href="equipment.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="17" r="3.5"/><circle cx="17.5" cy="18" r="2.5"/><path d="M6 13V8h5l2 5"/><path d="M13 13h5l1 3"/></svg><span>Equipment</span></a></li>
+                    <li><a class="sidebar__link" href="products.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h16l-1 11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Products</span></a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__nav" aria-label="Insights">
+                <h2 class="sidebar__group-title">Insights</h2>
+                <ul>
+                    <li><a class="sidebar__link" href="reports.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V5"/><path d="M4 20h16"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Reports</span></a></li>
+                    <li><a class="sidebar__link" href="information.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg><span>Information</span></a></li>
+                    <li><a class="sidebar__link" href="contact.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4Z"/></svg><span>Help &amp; contact</span></a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="sidebar__footer">
+                <strong>Phase 1 preview</strong>
+                Interface only. Data shown is sample data and nothing is saved yet.
+            </div>
+        </aside>
+        <div class="app__main">
+            <header class="app-header">
+                <a class="brand app-header__brand" href="home.html">
+                    <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                    <span>
+                        <span class="brand__name">Kisan Mitra</span>
+                        <span class="brand__tagline">Management console</span>
+                    </span>
+                </a>
+                <form class="search" role="search">
+                    <label class="visually-hidden" for="global-search">Search the platform</label>
+                    <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                    <input class="search__input" id="global-search" type="search" name="q"
+                        placeholder="Search farmers, crops or equipment">
+                </form>
+                <div class="app-header__tools">
+                    <button class="icon-button" type="button" aria-label="Notifications (3 unread)">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 16V11a6 6 0 1 0-12 0v5l-1.5 2.5h15Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+                        <span class="icon-button__dot"></span>
+                    </button>
+                    <div class="user-chip">
+                        <img class="user-chip__avatar" src="../images/farmers/farmer-1.svg" alt="">
+                        <span class="user-chip__text">
+                            <span class="user-chip__name">Ankit Verma</span>
+                            <span class="user-chip__role">Block manager</span>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <nav class="mobile-rail" aria-label="Section navigation">
+                <ul class="mobile-rail__list">
+                    <li><a class="mobile-rail__link" href="home.html">Website</a></li>
+                        <li><a class="mobile-rail__link is-current" href="dashboard.html">Dashboard</a></li>
+                        <li><a class="mobile-rail__link" href="farmers.html">Farmers</a></li>
+                        <li><a class="mobile-rail__link" href="crops.html">Crops</a></li>
+                        <li><a class="mobile-rail__link" href="equipment.html">Equipment</a></li>
+                        <li><a class="mobile-rail__link" href="products.html">Products</a></li>
+                        <li><a class="mobile-rail__link" href="reports.html">Reports</a></li>
+                        <li><a class="mobile-rail__link" href="information.html">Information</a></li>
+                        <li><a class="mobile-rail__link" href="contact.html">Help &amp; contact</a></li>
+                </ul>
+            </nav>
+            <main class="app-content" id="main">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-header__title">Dashboard</h1>
+                        <p class="page-header__subtitle">Kharif season, week 38 · Mathura block · sample data</p>
+                    </div>
+                    <div class="page-header__actions">
+                        <a class="btn btn-primary" href="add-farmer.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14"/><path d="M5 12h14"/></svg>Add farmer</a>
+                        <button class="btn btn-secondary" type="button"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v10"/><path d="m8 11 4 4 4-4"/><path d="M4 18h16"/></svg>Export summary</button>
+                    </div>
+                </div>
+
+                <div class="grid grid--4 mb-6">
+                <article class="stats-card">
+                    <div class="stats-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="3.5"/><path d="M17 11a3 3 0 1 0 0-6"/><path d="M21 20v-2a3.5 3.5 0 0 0-2.5-3.3"/></svg></div>
+                    <div class="stats-card__content">
+                        <p class="stats-card__value">124</p>
+                        <p class="stats-card__label">Farmers</p>
+                        <small class="stats-card__note">108 active this season</small>
+                    </div>
+                </article>
+                <article class="stats-card">
+                    <div class="stats-card__icon stats-card__icon--secondary"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21V9"/><path d="M12 14c-4 0-6-2.6-6-6.5C10 7.5 12 10 12 14Z"/><path d="M12 12c4 0 6-2.6 6-6.5C14 5.5 12 8 12 12Z"/></svg></div>
+                    <div class="stats-card__content">
+                        <p class="stats-card__value">48</p>
+                        <p class="stats-card__label">Crop entries</p>
+                        <small class="stats-card__note">Across 6 crop types</small>
+                    </div>
+                </article>
+                <article class="stats-card">
+                    <div class="stats-card__icon stats-card__icon--info"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="17" r="3.5"/><circle cx="17.5" cy="18" r="2.5"/><path d="M6 13V8h5l2 5"/><path d="M13 13h5l1 3"/></svg></div>
+                    <div class="stats-card__content">
+                        <p class="stats-card__value">16</p>
+                        <p class="stats-card__label">Equipment</p>
+                        <small class="stats-card__note">11 available today</small>
+                    </div>
+                </article>
+                <article class="stats-card">
+                    <div class="stats-card__icon stats-card__icon--accent"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 19V6"/><path d="m4 15 5-5 4 3 7-7"/></svg></div>
+                    <div class="stats-card__content">
+                        <p class="stats-card__value">₹2.41L</p>
+                        <p class="stats-card__label">Production value</p>
+                        <small class="stats-card__note">Recorded this quarter</small>
+                    </div>
+                </article>
+                </div>
+
+                <div class="dash-grid">
+                    <div class="stack">
+                        <section class="card">
+                            <div class="card__header">
+                                <h2 class="card__title">Crop overview</h2>
+                                <a class="btn-link" href="crops.html">View all crops</a>
+                            </div>
+                            <div class="card__body">
+                                <p class="text-small mb-5">Area under each crop in the current season, out of 362 acres
+                                    recorded.</p>
+                                <div class="bar-chart">
+                            <div class="bar">
+                                <span class="bar__label">Wheat</span>
+                                <span class="bar__track"><span class="bar__fill w-100"></span></span>
+                                <span class="bar__value">120 ac</span>
+                            </div>
+                            <div class="bar">
+                                <span class="bar__label">Sugarcane</span>
+                                <span class="bar__track"><span class="bar__fill w-55 bar__fill--secondary"></span></span>
+                                <span class="bar__value">64 ac</span>
+                            </div>
+                            <div class="bar">
+                                <span class="bar__label">Rice</span>
+                                <span class="bar__track"><span class="bar__fill w-70 bar__fill--accent"></span></span>
+                                <span class="bar__value">86 ac</span>
+                            </div>
+                            <div class="bar">
+                                <span class="bar__label">Maize</span>
+                                <span class="bar__track"><span class="bar__fill w-45 bar__fill--info"></span></span>
+                                <span class="bar__value">54 ac</span>
+                            </div>
+                            <div class="bar">
+                                <span class="bar__label">Potato</span>
+                                <span class="bar__track"><span class="bar__fill w-30 bar__fill--secondary"></span></span>
+                                <span class="bar__value">38 ac</span>
+                            </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="card">
+                            <div class="card__header">
+                                <h2 class="card__title">Recent farmers</h2>
+                                <a class="btn-link" href="farmers.html">Open farmer register</a>
+                            </div>
+                            <div class="card__body card__body--flush">
+                                <div class="table-wrap">
+                                    <table class="table">
+                                        <caption class="visually-hidden">Four farmers most recently added to the
+                                            register</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Farmer</th>
+                                                <th scope="col">Main crop</th>
+                                                <th scope="col">Farm size</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table__person">
+                                                <img class="table__avatar" src="../images/farmers/farmer-1.svg" alt="">
+                                                <span>
+                                                    <span class="table__name">Rahul Sharma</span>
+                                                    <span class="table__sub">Barsana, Mathura</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>Wheat</td>
+                                        <td>5 acres</td>
+                                        <td><span class="status status-active">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table__person">
+                                                <img class="table__avatar" src="../images/farmers/farmer-2.svg" alt="">
+                                                <span>
+                                                    <span class="table__name">Amit Kumar</span>
+                                                    <span class="table__sub">Fatehpur Sikri, Agra</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>Rice</td>
+                                        <td>7 acres</td>
+                                        <td><span class="status status-active">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table__person">
+                                                <img class="table__avatar" src="../images/farmers/farmer-4.svg" alt="">
+                                                <span>
+                                                    <span class="table__name">Sunita Devi</span>
+                                                    <span class="table__sub">Govardhan, Mathura</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>Mustard</td>
+                                        <td>3.5 acres</td>
+                                        <td><span class="status status-active">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table__person">
+                                                <img class="table__avatar" src="../images/farmers/farmer-3.svg" alt="">
+                                                <span>
+                                                    <span class="table__name">Ravi Singh</span>
+                                                    <span class="table__sub">Khair, Aligarh</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>Potato</td>
+                                        <td>4 acres</td>
+                                        <td><span class="status status-inactive">Inactive</span></td>
+                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="card">
+                            <div class="card__header">
+                                <h2 class="card__title">Recent activity</h2>
+                            </div>
+                            <div class="card__body card__body--flush">
+                                <ul>
+                            <li class="activity">
+                                <span class="activity__dot" aria-hidden="true"></span>
+                                <div>
+                                    <p class="activity__text">Sunita Devi was added to the farmer register</p>
+                                    <p class="activity__time">Today, 10:24 am</p>
+                                </div>
+                            </li>
+                            <li class="activity">
+                                <span class="activity__dot activity__dot--accent" aria-hidden="true"></span>
+                                <div>
+                                    <p class="activity__text">Tractor MH-575 marked as in use by Barsana team</p>
+                                    <p class="activity__time">Today, 9:05 am</p>
+                                </div>
+                            </li>
+                            <li class="activity">
+                                <span class="activity__dot" aria-hidden="true"></span>
+                                <div>
+                                    <p class="activity__text">Rice harvest recorded for 12 acres in Fatehpur Sikri</p>
+                                    <p class="activity__time">Yesterday, 6:40 pm</p>
+                                </div>
+                            </li>
+                            <li class="activity">
+                                <span class="activity__dot activity__dot--accent" aria-hidden="true"></span>
+                                <div>
+                                    <p class="activity__text">Sprayer sent for servicing to the Aligarh workshop</p>
+                                    <p class="activity__time">Yesterday, 2:15 pm</p>
+                                </div>
+                            </li>
+                            <li class="activity">
+                                <span class="activity__dot activity__dot--info" aria-hidden="true"></span>
+                                <div>
+                                    <p class="activity__text">Monthly production report generated for August</p>
+                                    <p class="activity__time">14 Sep, 11:00 am</p>
+                                </div>
+                            </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="stack">
+                        <section class="weather" aria-labelledby="weather-title">
+                            <h2 class="card__title" id="weather-title">Weather today</h2>
+                            <p class="weather__place">Mathura, Uttar Pradesh</p>
+                            <p class="weather__temp">31°C</p>
+                            <p class="weather__desc">Partly cloudy · feels like 34°C</p>
+                            <div class="weather__grid">
+                                <div><strong>62%</strong>Humidity</div>
+                                <div><strong>11 km/h</strong>Wind</div>
+                                <div><strong>20%</strong>Rain chance</div>
+                            </div>
+                            <p class="weather__note">Sample reading. Live weather data is planned for a later phase.</p>
+                        </section>
+
+                        <section class="card">
+                            <div class="card__header">
+                                <h2 class="card__title">Quick actions</h2>
+                            </div>
+                            <div class="card__body">
+                                <div class="quick-actions">
+                                <a class="quick-action" href="add-farmer.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14"/><path d="M5 12h14"/></svg><span>Add farmer</span></a>
+                                <a class="quick-action" href="crops.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21V9"/><path d="M12 14c-4 0-6-2.6-6-6.5C10 7.5 12 10 12 14Z"/><path d="M12 12c4 0 6-2.6 6-6.5C14 5.5 12 8 12 12Z"/></svg><span>Crop list</span></a>
+                                <a class="quick-action" href="equipment.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="17" r="3.5"/><circle cx="17.5" cy="18" r="2.5"/><path d="M6 13V8h5l2 5"/><path d="M13 13h5l1 3"/></svg><span>Equipment</span></a>
+                                <a class="quick-action" href="reports.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V5"/><path d="M4 20h16"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Reports</span></a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="card">
+                            <div class="card__header">
+                                <h2 class="card__title">Agriculture tips</h2>
+                                <a class="btn-link" href="information.html">More</a>
+                            </div>
+                            <div class="card__body stack">
+                            <article class="tip">
+                                <p class="tip__label">Irrigation</p>
+                                <p class="tip__text">Check soil moisture before irrigation to avoid unnecessary water consumption.</p>
+                            </article>
+                            <article class="tip">
+                                <p class="tip__label">Rabi sowing</p>
+                                <p class="tip__text">Wheat sown between 10 and 25 November gives the steadiest yield in this belt.</p>
+                            </article>
+                            <article class="tip">
+                                <p class="tip__label">Soil health</p>
+                                <p class="tip__text">Send a soil sample for testing once every three years, before the Rabi season.</p>
+                            </article>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer footer--slim">
+                <div class="container">
+                    <div class="footer__bottom">
+                        <p>© 2025 Kisan Mitra. Phase 1 — static interface, college project.</p>
+                        <p>Sample data shown for demonstration only.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
