@@ -1,0 +1,28 @@
+import { imageToDataURL } from './helpers.js';
+
+export function attachImagePreview(form) {
+  const input = form.querySelector('[data-image-input]');
+  const preview = form.querySelector('[data-image-preview]');
+  const hidden = form.querySelector('[name="image"]');
+  if (!input || !preview || !hidden) return;
+  input.addEventListener('change', async () => {
+    const file = input.files?.[0];
+    if (!file) return;
+    try {
+      const compressed = await imageToDataURL(file);
+      hidden.value = compressed;
+      preview.src = compressed;
+      preview.hidden = false;
+      preview.alt = 'Preview of selected image';
+    } catch (error) {
+      window.dispatchEvent(new CustomEvent('km:toast', { detail: { message: error.message, type: 'error' } }));
+      input.value = '';
+    }
+  });
+  form.querySelector('[data-image-remove]')?.addEventListener('click', () => {
+    hidden.value = '';
+    input.value = '';
+    preview.src = '';
+    preview.hidden = true;
+  });
+}
