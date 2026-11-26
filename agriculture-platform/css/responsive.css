@@ -1,0 +1,344 @@
+/* ==========================================================================
+   Kisan Mitra — responsive.css
+   Every breakpoint lives here. Load this file last.
+
+   Breakpoints
+   1280px  large desktop ceiling
+   1024px  tablet landscape — sidebar folds into a scrollable rail
+    820px  tablet portrait  — multi-column grids collapse to two
+    640px  mobile           — everything becomes a single column
+    400px  small mobile     — type and padding tighten
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LARGE DESKTOP
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+    :root {
+        --content-max: 1280px;
+        --container-max: 1280px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   2. SMALL DESKTOP
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+    :root {
+        --sidebar-width: 220px;
+    }
+
+    .hero__inner {
+        gap: var(--space-6);
+    }
+}
+
+@media (max-width: 1120px) {
+    .dash-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .footer__grid {
+        grid-template-columns: 1.3fr repeat(2, 1fr);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLET LANDSCAPE — sidebar becomes a horizontal rail
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    .app {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .mobile-rail {
+        display: block;
+        position: sticky;
+        top: var(--topbar-height);
+        z-index: 25;
+    }
+
+    .app-header__brand {
+        display: inline-flex;
+    }
+
+    .app-content {
+        padding: var(--space-5) var(--space-4) var(--space-6);
+    }
+
+    .grid--4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero__inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero__media {
+        order: -1;
+    }
+
+    .auth {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .auth__panel {
+        padding: var(--space-6) var(--space-5);
+    }
+
+    .auth__illustration {
+        display: none;
+    }
+
+    .section {
+        padding-block: var(--space-7);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. TABLET PORTRAIT
+   -------------------------------------------------------------------------- */
+@media (max-width: 820px) {
+    :root {
+        --text-4xl: 2.35rem;
+        --text-3xl: 1.9rem;
+        --text-2xl: 1.5rem;
+    }
+
+    .grid--3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .form-grid--3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .navbar__inner {
+        flex-wrap: wrap;
+        padding-block: var(--space-3);
+    }
+
+    .navbar__menu {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: var(--space-1);
+    }
+
+    .navbar__link {
+        white-space: nowrap;
+    }
+
+    .toolbar__filters {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .search {
+        max-width: 100%;
+    }
+
+    .cta {
+        padding: var(--space-6);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   5. MOBILE
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+    :root {
+        --text-4xl: 2rem;
+        --text-3xl: 1.7rem;
+        --text-2xl: 1.35rem;
+        --text-xl: 1.2rem;
+        --space-7: 2.25rem;
+        --space-8: 2.75rem;
+    }
+
+    .container {
+        padding-inline: var(--space-4);
+    }
+
+    .grid--2,
+    .grid--3,
+    .grid--4 {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .form-grid,
+    .form-grid--3,
+    .choice-group,
+    .quick-actions {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .app-content {
+        padding: var(--space-5) var(--space-4) var(--space-6);
+    }
+
+    .app-header {
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .app-header .search {
+        display: none;
+    }
+
+    .user-chip {
+        padding: 0;
+        border: none;
+    }
+
+    .user-chip__text {
+        display: none;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .page-header__actions .btn {
+        flex: 1;
+    }
+
+    .stats-card {
+        padding: var(--space-4);
+        gap: var(--space-3);
+    }
+
+    .stats-card__icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .card__header,
+    .card__body,
+    .card__footer {
+        padding: var(--space-4);
+    }
+
+    .table th,
+    .table td {
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .table {
+        min-width: 620px;
+    }
+
+    .form-section {
+        padding: var(--space-4);
+    }
+
+    .form-actions .btn,
+    .hero__actions .btn,
+    .cta__actions .btn {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .bar {
+        grid-template-columns: 78px minmax(0, 1fr) 56px;
+        gap: var(--space-3);
+        font-size: var(--text-xs);
+    }
+
+    .column-chart {
+        height: 180px;
+        gap: var(--space-2);
+    }
+
+    .share-figure {
+        justify-content: center;
+    }
+
+    .footer__grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-5);
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    .auth__card {
+        padding: var(--space-5);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .auth__form-side {
+        padding: var(--space-5) var(--space-4) var(--space-6);
+    }
+
+    .cta {
+        border-radius: var(--radius-md);
+        padding: var(--space-5);
+    }
+
+    .hero__stats {
+        gap: var(--space-5);
+    }
+
+    .reason {
+        gap: var(--space-3);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   6. SMALL MOBILE
+   -------------------------------------------------------------------------- */
+@media (max-width: 400px) {
+    :root {
+        --text-4xl: 1.8rem;
+        --text-base: 0.95rem;
+    }
+
+    .brand__tagline {
+        display: none;
+    }
+
+    .stats-card {
+        flex-direction: column;
+    }
+
+    .weather__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .table {
+        min-width: 560px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   7. PRINT
+   -------------------------------------------------------------------------- */
+@media print {
+    .sidebar,
+    .mobile-rail,
+    .app-header__tools,
+    .navbar,
+    .footer,
+    .page-header__actions,
+    .toolbar {
+        display: none !important;
+    }
+
+    body {
+        background: #ffffff;
+    }
+
+    .card,
+    .stats-card {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+}

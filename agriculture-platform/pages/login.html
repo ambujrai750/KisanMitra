@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Kisan Mitra</title>
+    <meta name="description" content="Sign in to the Kisan Mitra agriculture and farmer management platform.">
+    <link rel="icon" type="image/svg+xml" href="../images/logo/logo-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="auth">
+        <section class="auth__panel">
+            <div>
+                <a class="brand brand--inverse" href="home.html">
+                    <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                    <span>
+                        <span class="brand__name">Kisan Mitra</span>
+                        <span class="brand__tagline">Agriculture &amp; farmer management</span>
+                    </span>
+                </a>
+            </div>
+            <div>
+                <h2 class="auth__panel-title">Welcome back</h2>
+                <p class="auth__panel-text">Sign in to open the management console for your block. In Phase 1 this screen is the interface only.</p>
+                <ul class="auth__points mt-6">
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5L19 7"/></svg><span>Farmer records, crops and equipment in one console</span></li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5L19 7"/></svg><span>Works the same on a field phone and an office desktop</span></li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5L19 7"/></svg><span>Sample data included so every screen is readable</span></li>
+                </ul>
+            </div>
+            <div class="auth__illustration">
+                <img src="../images/farmers/farmer-field.svg"
+                    alt="Illustration of a farmer standing beside a wheat field with a hoe">
+            </div>
+        </section>
+        <main class="auth__form-side" id="main">
+            <div class="auth__card">
+                <a class="brand" href="home.html">
+                    <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                    <span>
+                        <span class="brand__name">Kisan Mitra</span>
+                        <span class="brand__tagline">Agriculture &amp; farmer management</span>
+                    </span>
+                </a>
+                <h1 class="auth__title">Sign in to your account</h1>
+                <p class="auth__subtitle">Use the email address or username registered with your block
+                    office.</p>
+
+                <form class="stack">
+                    <div class="form-group">
+                        <label class="form-label" for="login-email">Email or username</label>
+                        <input class="form-control" id="login-email" name="email" type="text"
+                            placeholder="ankit.verma@kisanmitra.in" autocomplete="username">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="login-password">Password</label>
+                        <input class="form-control" id="login-password" name="password" type="password"
+                            placeholder="Enter your password" autocomplete="current-password">
+                    </div>
+
+                    <div class="auth__row">
+                        <label class="form-check" for="remember-me">
+                            <input type="checkbox" id="remember-me" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="contact.html">Forgot password?</a>
+                    </div>
+
+                    <button class="btn btn-primary btn-block btn-lg" type="button">Sign in</button>
+                    <p class="form-hint text-center">Sign-in is not connected yet. Authentication arrives in
+                        Phase 2.</p>
+                </form>
+
+                <p class="auth__alt">New to Kisan Mitra?
+                    <a href="register.html">Create an account</a>
+                </p>
+                <p class="text-center mt-4">
+                    <a class="btn btn-secondary btn-block" href="dashboard.html">View the dashboard without
+                        signing in</a>
+                </p>
+                <a class="auth__back" href="home.html">Back to the website</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

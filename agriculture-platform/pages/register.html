@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account | Kisan Mitra</title>
+    <meta name="description" content="Register for the Kisan Mitra agriculture and farmer management platform.">
+    <link rel="icon" type="image/svg+xml" href="../images/logo/logo-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="auth">
+        <section class="auth__panel">
+            <div>
+                <a class="brand brand--inverse" href="home.html">
+                    <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                    <span>
+                        <span class="brand__name">Kisan Mitra</span>
+                        <span class="brand__tagline">Agriculture &amp; farmer management</span>
+                    </span>
+                </a>
+            </div>
+            <div>
+                <h2 class="auth__panel-title">Create your account</h2>
+                <p class="auth__panel-text">Register as a farmer to follow your own land and crops, or as management staff to maintain records for the block.</p>
+                <ul class="auth__points mt-6">
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5L19 7"/></svg><span>Farmer records, crops and equipment in one console</span></li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5L19 7"/></svg><span>Works the same on a field phone and an office desktop</span></li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5L19 7"/></svg><span>Sample data included so every screen is readable</span></li>
+                </ul>
+            </div>
+            <div class="auth__illustration">
+                <img src="../images/farmers/farmer-field.svg"
+                    alt="Illustration of a farmer standing beside a wheat field with a hoe">
+            </div>
+        </section>
+        <main class="auth__form-side" id="main">
+            <div class="auth__card">
+                <a class="brand" href="home.html">
+                    <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                    <span>
+                        <span class="brand__name">Kisan Mitra</span>
+                        <span class="brand__tagline">Agriculture &amp; farmer management</span>
+                    </span>
+                </a>
+                <h1 class="auth__title">Create your account</h1>
+                <p class="auth__subtitle">It takes a minute. You can change these details later from your
+                    profile.</p>
+
+                <form class="stack">
+                    <div class="form-group">
+                        <label class="form-label" for="reg-name">Full name</label>
+                        <input class="form-control" id="reg-name" name="fullname" type="text"
+                            placeholder="Rahul Sharma" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="reg-email">Email</label>
+                        <input class="form-control" id="reg-email" name="email" type="email"
+                            placeholder="rahul.sharma@example.com" autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="reg-mobile">Mobile number</label>
+                        <input class="form-control" id="reg-mobile" name="mobile" type="tel"
+                            placeholder="+91 98765 43210" autocomplete="tel">
+                        <small class="form-hint">Ten digits, the number that receives field updates.</small>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="reg-password">Password</label>
+                        <input class="form-control" id="reg-password" name="password" type="password"
+                            placeholder="At least eight characters" autocomplete="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="reg-confirm">Confirm password</label>
+                        <input class="form-control" id="reg-confirm" name="confirm_password" type="password"
+                            placeholder="Repeat the password" autocomplete="new-password">
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend class="form-label">User type</legend>
+                        <div class="choice-group">
+                            <label class="choice" for="type-farmer">
+                                <input type="radio" id="type-farmer" name="user_type" value="farmer" checked>
+                                <span>
+                                    <span class="choice__title">Farmer</span>
+                                    <span class="choice__desc">See your land, crops and nearby supplies</span>
+                                </span>
+                            </label>
+                            <label class="choice" for="type-admin">
+                                <input type="radio" id="type-admin" name="user_type" value="admin">
+                                <span>
+                                    <span class="choice__title">Admin / management</span>
+                                    <span class="choice__desc">Maintain records for the whole block</span>
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <label class="form-check" for="terms">
+                        <input type="checkbox" id="terms" name="terms">
+                        <span>I agree to the terms of use and the data policy of Kisan Mitra.</span>
+                    </label>
+
+                    <button class="btn btn-primary btn-block btn-lg" type="button">Create account</button>
+                    <p class="form-hint text-center">Registration is not connected yet. Accounts start
+                        working in Phase 2.</p>
+                </form>
+
+                <p class="auth__alt">Already registered?
+                    <a href="login.html">Sign in</a>
+                </p>
+                <a class="auth__back" href="home.html">Back to the website</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

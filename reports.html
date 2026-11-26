@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | Kisan Mitra</title>
+    <meta name="description" content="Agriculture statistics: production overview, crop distribution, farmer and equipment figures.">
+    <link rel="icon" type="image/svg+xml" href="../images/logo/logo-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="app">
+        <aside class="sidebar">
+            <a class="brand brand--inverse" href="home.html">
+                <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                <span>
+                    <span class="brand__name">Kisan Mitra</span>
+                    <span class="brand__tagline">Management console</span>
+                </span>
+            </a>
+            <div>
+            <nav class="sidebar__nav" aria-label="Overview">
+                <h2 class="sidebar__group-title">Overview</h2>
+                <ul>
+                    <li><a class="sidebar__link" href="dashboard.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="8" height="9" rx="2"/><rect x="13" y="3" width="8" height="5" rx="2"/><rect x="13" y="10" width="8" height="11" rx="2"/><rect x="3" y="14" width="8" height="7" rx="2"/></svg><span>Dashboard</span></a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__nav" aria-label="Manage">
+                <h2 class="sidebar__group-title">Manage</h2>
+                <ul>
+                    <li><a class="sidebar__link" href="farmers.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="3.5"/><path d="M17 11a3 3 0 1 0 0-6"/><path d="M21 20v-2a3.5 3.5 0 0 0-2.5-3.3"/></svg><span>Farmers</span></a></li>
+                    <li><a class="sidebar__link" href="crops.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21V9"/><path d="M12 14c-4 0-6-2.6-6-6.5C10 7.5 12 10 12 14Z"/><path d="M12 12c4 0 6-2.6 6-6.5C14 5.5 12 8 12 12Z"/></svg><span>Crops</span></a></li>
+                    <li><a class="sidebar__link" href="equipment.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="17" r="3.5"/><circle cx="17.5" cy="18" r="2.5"/><path d="M6 13V8h5l2 5"/><path d="M13 13h5l1 3"/></svg><span>Equipment</span></a></li>
+                    <li><a class="sidebar__link" href="products.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h16l-1 11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Products</span></a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__nav" aria-label="Insights">
+                <h2 class="sidebar__group-title">Insights</h2>
+                <ul>
+                    <li><a class="sidebar__link is-current" href="reports.html" aria-current="page"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V5"/><path d="M4 20h16"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Reports</span></a></li>
+                    <li><a class="sidebar__link" href="information.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg><span>Information</span></a></li>
+                    <li><a class="sidebar__link" href="contact.html"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4Z"/></svg><span>Help &amp; contact</span></a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="sidebar__footer">
+                <strong>Phase 1 preview</strong>
+                Interface only. Data shown is sample data and nothing is saved yet.
+            </div>
+        </aside>
+        <div class="app__main">
+            <header class="app-header">
+                <a class="brand app-header__brand" href="home.html">
+                    <img class="brand__mark" src="../images/logo/logo-mark.svg" alt="Kisan Mitra logo">
+                    <span>
+                        <span class="brand__name">Kisan Mitra</span>
+                        <span class="brand__tagline">Management console</span>
+                    </span>
+                </a>
+                <form class="search" role="search">
+                    <label class="visually-hidden" for="global-search">Search the platform</label>
+                    <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                    <input class="search__input" id="global-search" type="search" name="q"
+                        placeholder="Search farmers, crops or equipment">
+                </form>
+                <div class="app-header__tools">
+                    <button class="icon-button" type="button" aria-label="Notifications (3 unread)">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 16V11a6 6 0 1 0-12 0v5l-1.5 2.5h15Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+                        <span class="icon-button__dot"></span>
+                    </button>
+                    <div class="user-chip">
+                        <img class="user-chip__avatar" src="../images/farmers/farmer-1.svg" alt="">
+                        <span class="user-chip__text">
+                            <span class="user-chip__name">Ankit Verma</span>
+                            <span class="user-chip__role">Block manager</span>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <nav class="mobile-rail" aria-label="Section navigation">
+                <ul class="mobile-rail__list">
+                    <li><a class="mobile-rail__link" href="home.html">Website</a></li>
+                        <li><a class="mobile-rail__link" href="dashboard.html">Dashboard</a></li>
+                        <li><a class="mobile-rail__link" href="farmers.html">Farmers</a></li>
+                        <li><a class="mobile-rail__link" href="crops.html">Crops</a></li>
+                        <li><a class="mobile-rail__link" href="equipment.html">Equipment</a></li>
+                        <li><a class="mobile-rail__link" href="products.html">Products</a></li>
+                        <li><a class="mobile-rail__link is-current" href="reports.html">Reports</a></li>
+                        <li><a class="mobile-rail__link" href="information.html">Information</a></li>
+                        <li><a class="mobile-rail__link" href="contact.html">Help &amp; contact</a></li>
+                </ul>
+            </nav>
+            <main class="app-content" id="main">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-header__title">Reports</h1>
+                        <p class="page-header__subtitle">Production, crop share and farmer figures for the 2025 season · sample data</p>
+                    </div>
+                    <div class="page-header__actions">
+                        <button class="btn btn-secondary" type="button"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v10"/><path d="m8 11 4 4 4-4"/><path d="M4 18h16"/></svg>Download PDF</button>
+                    </div>
+                </div>
+
+                <div class="grid grid--4 mb-6">
+                <article class="stats-card">
+                    <div class="stats-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 19V6"/><path d="m4 15 5-5 4 3 7-7"/></svg></div>
+                    <div class="stats-card__content">
+                        <p class="stats-card__value">₹2.41L</p>
+                        <p class="stats-card__label">Production value</p>
+                        <small class="stats-card__note">Recorded this quarter</small>
+                    </div>
+                </article>
+                <article class="stats-card">
+                    <div class="stats-card__icon stats-card__icon--secondary"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21V9"/><path d="M12 14c-4 0-6-2.6-6-6.5C10 7.5 12 10 12 14Z"/><path d="M12 12c4 0 6-2.6 6-6.5C14 5.5 12 8 12 12Z"/></svg></div>
+                    <div class="stats-card__content">
+                        <p class="stats-card__value">133</p>
+                        <p class="stats-card__label">Tonnes harvested</p>
+                        <small class="stats-card__note">Across five crops</small>
+                    </div>
+                </article>
+                <article class="stats-card">
+                    <div class="stats-card__icon stats-card__icon--info"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+                    <div class="stats-card__content">
+                        <p class="stats-card__value">389</p>
+                        <p class="stats-card__label">Acres reported</p>
+                        <small class="stats-card__note">88% of registered land</small>
+                    </div>
+                </article>
+                <article class="stats-card">
+                    <div class="stats-card__icon stats-card__icon--accent"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="3.5"/><path d="M17 11a3 3 0 1 0 0-6"/><path d="M21 20v-2a3.5 3.5 0 0 0-2.5-3.3"/></svg></div>
+                    <div class="stats-card__content">
+                        <p class="stats-card__value">+6</p>
+                        <p class="stats-card__label">New farmers</p>
+                        <small class="stats-card__note">Added in September</small>
+                    </div>
+                </article>
+                </div>
+
+                <div class="grid grid--2 mb-5">
+                    <section class="card">
+                        <div class="card__header">
+                            <h2 class="card__title">Crop distribution</h2>
+                            <p class="text-small">Share of cropped area</p>
+                        </div>
+                        <div class="card__body">
+                            <div class="share-figure">
+                                <div class="share-ring" role="img"
+                                    aria-label="Donut chart: wheat 45 percent, rice 30 percent, maize 25 percent"></div>
+                                <ul class="share-key">
+                                    <li><i aria-hidden="true"></i><span>Wheat — 45%</span></li>
+                                    <li><i class="is-accent" aria-hidden="true"></i><span>Rice — 30%</span></li>
+                                    <li><i class="is-info" aria-hidden="true"></i><span>Maize — 25%</span></li>
+                                </ul>
+                            </div>
+                            <div class="bar-chart mt-6">
+                                <div class="bar">
+                                    <span class="bar__label">Wheat</span>
+                                    <span class="bar__track"><span class="bar__fill w-45"></span></span>
+                                    <span class="bar__value">45%</span>
+                                </div>
+                                <div class="bar">
+                                    <span class="bar__label">Rice</span>
+                                    <span class="bar__track"><span class="bar__fill w-30 bar__fill--accent"></span></span>
+                                    <span class="bar__value">30%</span>
+                                </div>
+                                <div class="bar">
+                                    <span class="bar__label">Maize</span>
+                                    <span class="bar__track"><span class="bar__fill w-25 bar__fill--info"></span></span>
+                                    <span class="bar__value">25%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="card">
+                        <div class="card__header">
+                            <h2 class="card__title">Monthly production</h2>
+                            <p class="text-small">Relative volume, April to March</p>
+                        </div>
+                        <div class="card__body">
+                            <div class="column-chart" role="img"
+                                aria-label="Column chart of monthly production volume, peaking in October and March">
+                                    <div class="column">
+                                        <span class="column__bar h-55"></span>
+                                        <span class="column__label">Apr</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-40"></span>
+                                        <span class="column__label">May</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-30"></span>
+                                        <span class="column__label">Jun</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-45"></span>
+                                        <span class="column__label">Jul</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-60"></span>
+                                        <span class="column__label">Aug</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-75"></span>
+                                        <span class="column__label">Sep</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-85 column__bar--accent"></span>
+                                        <span class="column__label">Oct</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-65"></span>
+                                        <span class="column__label">Nov</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-50"></span>
+                                        <span class="column__label">Dec</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-70"></span>
+                                        <span class="column__label">Jan</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-80"></span>
+                                        <span class="column__label">Feb</span>
+                                    </div>
+                                    <div class="column">
+                                        <span class="column__bar h-95 column__bar--accent"></span>
+                                        <span class="column__label">Mar</span>
+                                    </div>
+                            </div>
+                            <div class="chart-legend">
+                                <span><i aria-hidden="true"></i>Regular month</span>
+                                <span><i class="is-accent" aria-hidden="true"></i>Harvest month</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="card mb-5">
+                    <div class="card__header">
+                        <h2 class="card__title">Production overview</h2>
+                        <p class="text-small">Season total by crop</p>
+                    </div>
+                    <div class="card__body card__body--flush">
+                        <div class="table-wrap">
+                            <table class="table">
+                                <caption class="visually-hidden">Area, output and value recorded for each crop this
+                                    season</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Crop</th>
+                                        <th scope="col">Area</th>
+                                        <th scope="col">Output</th>
+                                        <th scope="col">Value</th>
+                                        <th scope="col">Against last year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                            <tr>
+                                                <th scope="row">Wheat</th>
+                                                <td>120 acres</td>
+                                                <td>38.4 tonnes</td>
+                                                <td>₹96,000</td>
+                                                <td><span class="status status-active">Above last year</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Rice</th>
+                                                <td>86 acres</td>
+                                                <td>27.5 tonnes</td>
+                                                <td>₹71,500</td>
+                                                <td><span class="status status-active">Above last year</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Maize</th>
+                                                <td>54 acres</td>
+                                                <td>16.2 tonnes</td>
+                                                <td>₹35,600</td>
+                                                <td><span class="status status-info">Same as last year</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Potato</th>
+                                                <td>38 acres</td>
+                                                <td>42.8 tonnes</td>
+                                                <td>₹24,300</td>
+                                                <td><span class="status status-warning">Below last year</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Mustard</th>
+                                                <td>27 acres</td>
+                                                <td>8.1 tonnes</td>
+                                                <td>₹13,700</td>
+                                                <td><span class="status status-info">Same as last year</span></td>
+                                            </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="grid grid--2">
+                    <section class="card">
+                        <div class="card__header">
+                            <h2 class="card__title">Farmer statistics</h2>
+                            <p class="text-small">Registered farmers by district</p>
+                        </div>
+                        <div class="card__body">
+                            <div class="bar-chart">
+                                    <div class="bar">
+                                        <span class="bar__label">Mathura</span>
+                                        <span class="bar__track"><span class="bar__fill w-45"></span></span>
+                                        <span class="bar__value">45%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="bar__label">Agra</span>
+                                        <span class="bar__track"><span class="bar__fill w-25 bar__fill--accent"></span></span>
+                                        <span class="bar__value">25%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="bar__label">Aligarh</span>
+                                        <span class="bar__track"><span class="bar__fill w-15 bar__fill--info"></span></span>
+                                        <span class="bar__value">15%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="bar__label">Meerut</span>
+                                        <span class="bar__track"><span class="bar__fill w-10 bar__fill--secondary"></span></span>
+                                        <span class="bar__value">10%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="bar__label">Others</span>
+                                        <span class="bar__track"><span class="bar__fill w-5 bar__fill--secondary"></span></span>
+                                        <span class="bar__value">5%</span>
+                                    </div>
+                            </div>
+                            <p class="text-small mt-5">108 of 124 farmers are active this season. 16 records are waiting for
+                                field verification.</p>
+                        </div>
+                    </section>
+
+                    <section class="card">
+                        <div class="card__header">
+                            <h2 class="card__title">Equipment statistics</h2>
+                            <p class="text-small">Machine status today</p>
+                        </div>
+                        <div class="card__body">
+                            <div class="bar-chart">
+                                    <div class="bar">
+                                        <span class="bar__label">Available</span>
+                                        <span class="bar__track"><span class="bar__fill w-70"></span></span>
+                                        <span class="bar__value">70%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="bar__label">In use</span>
+                                        <span class="bar__track"><span class="bar__fill w-20 bar__fill--info"></span></span>
+                                        <span class="bar__value">20%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="bar__label">Maintenance</span>
+                                        <span class="bar__track"><span class="bar__fill w-10 bar__fill--accent"></span></span>
+                                        <span class="bar__value">10%</span>
+                                    </div>
+                            </div>
+                            <p class="text-small mt-5">Average booking length is 3 days. The sprayer and one cultivator are
+                                at the Aligarh workshop.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <p class="text-small mt-5">Charts are drawn with CSS only. Interactive charts are planned for Phase 2.</p>
+            </main>
+            <footer class="footer footer--slim">
+                <div class="container">
+                    <div class="footer__bottom">
+                        <p>© 2025 Kisan Mitra. Phase 1 — static interface, college project.</p>
+                        <p>Sample data shown for demonstration only.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
